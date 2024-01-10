@@ -13,10 +13,13 @@ personal:
     profiles:
         - network: LinkedIn
           username: John Doe
-          url: https://linkedin.com/in/johndoe
+          url: https://linkedin.com/in/japrozs
+        - network: Twitter
+          username: John Doe
+          url: https://twitter.com/japrozs
         - network: GitHub
           username: johndoe
-          url: https://github.com/johndoe
+          url: https://github.com/japrozs
 
 work:
     - organization: Georgia State Production Network
@@ -118,6 +121,10 @@ coursework:
           - "Introduction to Computer Science"
 
 opensource:
+    - name: "Fprime"
+      date: 2024-01-08
+      languages: "C++"
+      desc: "JPL's flight software embedded framework"
     - name: "JSD"
       date: 2023-09-01
       languages: "C"
