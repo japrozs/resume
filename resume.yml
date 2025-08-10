@@ -27,7 +27,7 @@ work:
       url: https://example.com
       location: Atlanta, GA
       startDate: 2023-09-01
-      endDate: "present"
+      endDate: 2024-01-07
       highlights:
           - Helped produce college football and basketball game shows for ESPN & performed camera work and graphics work
           - Setup and make sure that equipment like cameras, hardware and networks work as intended
@@ -49,25 +49,25 @@ education:
       #     - Engineering Data Analysis
       #     - Compiler Architecture
       highlights:
-          - "Cummulative GPA: 3.76"
-          - "Rocketry Club – Founding member #sym.space.med  #sym.dot.c #sym.space.med Sikh Student Association – President #sym.space.med #sym.dot.c #sym.space.med Computer Science Club"
-    - institution: Saint Columba's High School
-      studyType: High School Degree
-      startDate: 2010-04-01
-      endDate: 2023-03-21
-      location: New Delhi
-      honors:
-      #     - 4.0 / 4.0 GPA
-      #     - President's List
-      #     - Dean's List
-      courses:
-      #     - Algorithms & Data Structures
-      #     - Applications in Quantitative Finance
-      #     - Engineering Data Analysis
-      #     - Compiler Architecture
-      highlights:
           - "Cummulative GPA: 3.6"
-          - "Clubs: Computer Science, Editorial Board, Model UN"
+          - "Rocketry Club – Founding member #sym.space.med  #sym.dot.c #sym.space.med ATL Sikhs – Executive #sym.space.med #sym.dot.c #sym.space.med Computer Science Club"
+    # - institution: Saint Columba's High School
+    #   studyType: High School Degree
+    #   startDate: 2010-04-01
+    #   endDate: 2023-03-21
+    #   location: New Delhi
+    #   honors:
+    #   #     - 4.0 / 4.0 GPA
+    #   #     - President's List
+    #   #     - Dean's List
+    #   courses:
+    #   #     - Algorithms & Data Structures
+    #   #     - Applications in Quantitative Finance
+    #   #     - Engineering Data Analysis
+    #   #     - Compiler Architecture
+    #   highlights:
+    #       - "Cummulative GPA: 3.6"
+    #       - "Clubs: Computer Science, Editorial Board, Model UN"
 
 affiliations:
     - organization: White Hat Hackers Association
@@ -92,13 +92,20 @@ affiliations:
           - Tell me, pray, what explanation do you put upon their actions?
 
 awards:
+    - title: 1st place at Truist CTF
+      date: 2024-11-01
+      issuer: Truist Bank
+      url: https://truist.com
+      location: Atlanta
+      highlights:
+          - Capture the Flag event organised by Truist Bank where my team came first and won a cash reward of \$2000\+
     - title: 1st place at CodeDay Delhi
       date: 2022-11-20
       issuer: CodeDay
       url: https://codeday.org
       location: New Delhi
       highlights:
-          - Went to my first hackathon which consisted of around 200 high school students from all over India and won 1st place.
+          - Took part in my first hackathon which consisted of around 200 high school students from all over India and won 1st place.
 
 certificates:
     - name: "CS50 - Introduction to Computer Science"
@@ -113,11 +120,15 @@ certificates:
 coursework:
     - name: "Mathematics"
       list:
-          - "Calculus of Ⅰ  Variable"
-          - "Precalculus"
+          - "Calculus of ⅠI  Variable"
+          # - "Calculus of Ⅰ  Variable"
+          - "Discrete Mathematics"
+          # - "Precalculus"
     - name: "Computer Science"
       list:
-          - "Introduction to Computer Science"
+          - "Computer Organization"
+          - "Systems Level Programming"
+          # - "Introduction to Computer Science"
 
 opensource:
     - name: "Fprime"
@@ -156,7 +167,7 @@ projects:
           - Vettel performs better than existing key-value stores like Redis in some cases.
     - name: "Dino"
       url: https://github.com/japrozs/dino
-      languages: "TypeScript #sym.dot.c Next.JS"
+      languages: "TypeScript #sym.dot.c NextJS"
       date: 2021-12-01
       highlights:
           - A simple yet powerful note-editor with modern features like WYSIWIG editor, complex document nesting, and dark mode.
@@ -166,11 +177,11 @@ projects:
       languages: "C"
       date: 2022-06-02
       highlights:
-          - A weird albeit unique way to create tiny web servers for testing purposes using a custom syntax config file
+          - A unique way to create tiny web servers for testing purposes using a custom syntax config file
           - Routes are specified alongwith bash commands that run when those routes are accessed and the data is sent back to the client
     - name: "Chronos"
       url: https://github.com/japrozs/chronos
-      languages: "TypeScript #sym.dot.c Next.JS"
+      languages: "TypeScript #sym.dot.c NextJS"
       date: 2023-09-02
       highlights:
           - Chronos allows you to search documents, media, PRs etc. across storage platforms like GDrive, Dropbox, Github etc.
@@ -189,11 +200,8 @@ skills:
     - category: Programming
       skills:
           - C
-          - JavaScript, Typescript
+          - Typescript
           - Python
-          - Bash
-          - HTML
-          - CSS
           - C++
     - category: Tools
       skills:
@@ -214,19 +222,18 @@ skills:
 
 languages:
     - language: English
-      fluency: Native speaker
-    - language: Hindi
-      fluency: Native speaker
+    - language: Hindi/Urdu
     - language: Punjabi
-      fluency: Native speaker
+    - language: Spanish
 
 interests:
     - Computer architecture
     - CTFs
-    - Astronomy
-    - Automobiles
+    - Sports
+    - Engines
     - Hardware
-    - Low-level systems engineering
+    - AI
+    - Cybersecurity
 
 references:
     # You can comment out the entries below if you don't have any references

@@ -70,7 +70,7 @@
     ],
     [
         #cvprojects(cvdata) \
-        #cvcoursework(cvdata) \
+        // #cvcoursework(cvdata) \
         #cvopensource(cvdata)
         // #cvpublications(cvdata) \
         // #cvreferences(cvdata)
@@ -78,16 +78,19 @@
 )
 
 // Single column layout
+// #heading(level: 2, "Objective Statement")
+// Computer Science major seeking an internship with NASA Jet Propulsion Laboratory working on Engineering in computing and software.
 // #cveducation(cvdata) \
 // #cvwork(cvdata) \
-// // #cvaffiliations(cvdata) \
+// #cvopensource(cvdata) \
 // #cvskills(cvdata, isbreakable:true) \
-// #cvcertificates(cvdata) \
-// #cvawards(cvdata) \
-// #cvprojects(cvdata) \
 // #cvcoursework(cvdata) \
-// #cvopensource(cvdata)
-// // #cvpublications(cvdata) \
-// // #cvreferences(cvdata)
+// // #cvaffiliations(cvdata) \
+// // #cvcertificates(cvdata) \
+// #cvawards(cvdata) \
+// #cvprojects(cvdata)
+
+// #cvpublications(cvdata) \
+// #cvreferences(cvdata)
 
 #footnote[Code for this resume hosted at https://github.com/japrozs/resume]

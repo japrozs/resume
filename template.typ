@@ -317,7 +317,7 @@
 #let cvcoursework(info, isbreakable: true) = {
     if info.certificates != none {block[
         == CourseWork
-
+        
         #for cw in info.coursework {
             // Create a block layout for each education entry
             block(width: 100%, breakable: isbreakable)[
@@ -359,9 +359,9 @@
         #if (info.languages != none) [
             #let langs = ()
             #for lang in info.languages {
-                langs.push([#lang.language (#lang.fluency)])
+                langs.push([#lang.language])
             }
-            - #text(font: "New Computer Modern")[*Languages*]: #langs.join(", ")
+            - #text(font: "New Computer Modern")[*Languages*]: #langs.join(",  ")
         ]
         #if (info.skills != none) [
             #for group in info.skills [
