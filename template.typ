@@ -145,7 +145,7 @@
                 // #if edu.url != none [
                 //     *#link(edu.url)[#edu.institution]* #h(1fr) #edu.location \
                 // ] else [
-                    #text(font: "New Computer Modern")[*#edu.institution*] #h(1fr) #text(style:"italic")[#end] \
+                    #text(font: "New Computer Modern")[*#edu.institution*] #h(1fr) #text(style:"italic")[#end  #footnote("Accelerated graduation – Completing in 3.5 years in place of the standard 4-year")] \
                 // ]
                 // Line 2: Degree and Date Range
                 #if edu.studyType != none [#text()[#edu.studyType] #h(1fr)] \
@@ -153,6 +153,7 @@
                 #eval(edu-items, mode: "markup")
             ]
         }
+        
     ]}
 }
 
@@ -170,7 +171,7 @@
                 // #if w.url != none [
                 //     *#link(w.url)[#w.organization]* #h(1fr) *#w.location* \
                 // ] else [
-                    #text(font: "New Computer Modern")[*#w.organization*] #h(1fr) #start #sym.dash.en #end \
+                    #text(font: "New Computer Modern")[*#w.organization*] #h(1fr) #text(style:"italic")[#start #sym.dash.en #end] \
                 // ]
                 // Line 2: Degree and Date Range
                 #text(style: "italic")[#w.position] #h(1fr)
@@ -260,7 +261,7 @@
                     #text(font: "New Computer Modern")[*#award.title*] #h(1fr) *#award.location* \
                 ]
                 // Line 2: Degree and Date Range
-                Issued by #text(style: "italic")[#award.issuer]  #h(1fr) #date \
+                Issued by #text(style: "italic")[#award.issuer]  #h(1fr) #text(style:"italic")[#date] \
                 #h(1fr)
                 // Summary or Description
                 #if award.highlights != none {
@@ -290,7 +291,7 @@
                     #text(font: "New Computer Modern")[*#cert.name*] \
                 ]
                 // Line 2: Degree and Date Range
-                Issued by #text(style: "italic")[#cert.issuer]  #h(1fr) #date \
+                Issued by #text(style: "italic")[#cert.issuer]  #h(1fr) #text(style:"italic")[#date] \
             ]
         }
     ]}
