@@ -85,6 +85,33 @@
 
 // Arrange the contact profiles with a diamond separator
 #let contacttext(info, uservars) = block(width: 100%, below: 2.4em)[
+
+  // Show links with a box around them or filled with a color
+  #show link: this => {
+    let show-type = "filled" // "box" or "filled", see below
+    let label-color = green
+    let default-color = rgb("#1591EA")
+
+    if show-type == "box" {
+      if type(this.dest) == label {
+        // Make the box bound the entire text:
+        set text(bottom-edge: "bounds", top-edge: "bounds")
+        box(this, stroke: label-color + 1pt)
+      } else {
+        set text(bottom-edge: "bounds", top-edge: "bounds")
+        box(this, stroke: default-color + 1pt)
+      }
+    } else if show-type == "filled" {
+      if type(this.dest) == label {
+        text(this, fill: label-color)
+      } else {
+        text(this, fill: default-color)
+      }
+    } else {
+      this
+    }
+  }
+
   // Contact Info
   // Create a list of contact profiles
   #let profiles = (
@@ -146,9 +173,10 @@
           // #if edu.url != none [
           //     *#link(edu.url)[#edu.institution]* #h(1fr) #edu.location \
           // ] else [
-          #text(font: "New Computer Modern")[*#edu.institution*] #h(1fr) #text(style: "italic")[#end  #footnote(
-              "Accelerated graduation – Completing in 3.5 years in place of the standard 4-year",
-            )] \
+          #text(font: "New Computer Modern")[*#edu.institution*] #h(1fr) Expected Graduation – #text(style: "italic")[#end] \
+          // #text(font: "New Computer Modern")[*#edu.institution*] #h(1fr) #text(style: "italic")[#end  #footnote(
+          //     "Accelerated graduation – Completing in 3.5 years in place of the standard 4-year",
+          //   )] \
           // ]
           // Line 2: Degree and Date Range
           #if edu.studyType != none [#text()[#edu.studyType] #h(1fr)] \
@@ -169,7 +197,7 @@
       #for w in info.work {
         // Parse ISO date strings into datetime objects
         let start = utils.strpdate(w.startDate)
-        let end = utils.strpdate(w.endDate)
+        let end = if w.endDate == 0 { "Present" } else { utils.strpdate(w.endDate) }
         // Create a block layout for each education entry
         block(width: 100%, breakable: isbreakable)[
           // Line 1: Institution and Location
@@ -233,7 +261,7 @@
     block[
       == Projects
       #let projects = if singlecolumn {
-        info.projects.slice(0, 3) // only first 3
+        info.projects.slice(0, 5) // only first 3
       } else {
         info.projects // all
       }
@@ -257,7 +285,7 @@
           //   #date #sym.dash.em #text()[#eval(project.languages, mode: "markup")] \
           //   // #h(1fr)
           // ]
-
+          #v(1.5pt)
           // Highlights
           #for hi in project.highlights [
             - #eval(hi, mode: "markup")

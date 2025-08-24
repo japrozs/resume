@@ -22,6 +22,17 @@ personal:
           url: https://github.com/japrozs
 
 work:
+    - organization: Georgia State University
+      position: Event Operations Technician
+      url: https://example.com
+      location: Atlanta, GA
+      startDate: 2024-01-10
+      endDate: 0
+      highlights:
+          # - Helped produce college football and basketball game shows for ESPN & performed camera work and graphics work
+          - Setup and monitor events for conferences, student organisations, and external clients
+          - Monitors all activities, reservations, and programs during the designated hours of operation and enforces all building policies and safety regulations.
+          - Makes appropriate decisions regarding behavior and actions, recognizes, and accepts responsibility for their actions, manages time effectively, acts in a dependable manner, and fulfills job requirements completely.
     - organization: Georgia State Production Network
       position: Engineering Assistant
       url: https://example.com
@@ -49,8 +60,9 @@ education:
       #     - Engineering Data Analysis
       #     - Compiler Architecture
       highlights:
-          - "Cummulative GPA: 3.6"
+          - "*Cummulative GPA* – 3.6"
           - "Rocketry Club – Founding member #sym.space.med  #sym.dot.c #sym.space.med ATL Sikhs – Executive #sym.space.med #sym.dot.c #sym.space.med Computer Science Club"
+          - "*Relevant Coursework* – Computer Organization , Systems Level Programming , Programming Language Concepts, Calculus of II Variables, Discrete Mathematics, Linear Algebra, Probaility & Statistics"
     # - institution: Saint Columba's High School
     #   studyType: High School Degree
     #   startDate: 2010-04-01
@@ -94,16 +106,16 @@ affiliations:
 awards:
     - title: 1st place at Truist CTF
       date: 2024-11-01
-      issuer: Truist Bank
+      issuer: Truist Bank & Georgia State University
       url: https://truist.com
-      location: Atlanta
+      location: Atlanta, GA
       highlights:
           - Capture the Flag event organised by Truist Bank where my team came first and won a cash reward of \$2000\+
     - title: 1st place at CodeDay Delhi
       date: 2022-11-20
       issuer: CodeDay
       url: https://codeday.org
-      location: New Delhi
+      location: New Delhi, IN
       highlights:
           - Took part in my first hackathon which consisted of around 200 high school students from all over India and won 1st place.
 
@@ -155,35 +167,35 @@ publications:
       url: https://example.com
 
 projects:
-    - name: "Rum"
+    - name: "Java Class Parser"
       url: https://github.com/japrozs/rum
       languages: "C #sym.dot.c Bash #sym.dot.c Java"
       date: 2023-06-01
       highlights:
           - A fully spec-compliant parser for the Java Class file format
           - Went through the entire Class file format spec  and modelled the parser based on that
-    - name: "Vettel"
+    - name: "Fast Key-Value Store"
       url: https://github.com/japrozs/vettel
       languages: "C #sym.dot.c Python"
       date: 2020-02-01
       highlights:
           - A minimalistic key-value store written in C aimed at speed.
-          - Vettel performs better than existing key-value stores like Redis in some cases.
-    - name: "Dino"
+          - Vettel performs better than existing key-value stores like Redis *in some cases*.
+    - name: "WYSIWIG Note Editor"
       url: https://github.com/japrozs/dino
       languages: "TypeScript #sym.dot.c NextJS"
       date: 2021-12-01
       highlights:
           - A simple yet powerful note-editor with modern features like WYSIWIG editor, complex document nesting, and dark mode.
           - Got features on the home page on ProductHunt with 24 hours of its launch
-    - name: "Dom"
+    - name: "Web Server Project"
       url: https://github.com/japrozs/dom
       languages: "C"
       date: 2022-06-02
       highlights:
           - A unique way to create tiny web servers for testing purposes using a custom syntax config file
           - Routes are specified alongwith bash commands that run when those routes are accessed and the data is sent back to the client
-    - name: "Chronos"
+    - name: "Spotlight Search for Files"
       url: https://github.com/japrozs/chronos
       languages: "TypeScript #sym.dot.c NextJS"
       date: 2023-09-02
@@ -207,6 +219,7 @@ skills:
           - Typescript
           - Python
           - C++
+          - Bash
     # - category: Tools
     #   skills:
     #       - Bash
