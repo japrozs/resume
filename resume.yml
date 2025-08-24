@@ -118,17 +118,21 @@ certificates:
       url: https://google.com
 
 coursework:
-    - name: "Mathematics"
-      list:
-          - "Calculus of ⅠI  Variable"
-          # - "Calculus of Ⅰ  Variable"
-          - "Discrete Mathematics"
-          # - "Precalculus"
     - name: "Computer Science"
-      list:
-          - "Computer Organization"
-          - "Systems Level Programming"
-          # - "Introduction to Computer Science"
+      list: "Computer Organization , Systems Level Programming , Programming Language Concepts"
+    - name: "Mathematics"
+      list: "Calculus of II Variables, Discrete Mathematics, Linear Algebra, Probaility & Statistics"
+      # - name: "Mathematics"
+      # list:
+      # - "Calculus of ⅠI  Variable"
+      # - "Calculus of Ⅰ  Variable"
+      # - "Discrete Mathematics"
+      # - "Precalculus"
+    # - name: "Computer Science"
+    #   list:
+    #       - "Computer Organization"
+    #       - "Systems Level Programming"
+    #       # - "Introduction to Computer Science"
 
 opensource:
     - name: "Fprime"
@@ -203,13 +207,13 @@ skills:
           - Typescript
           - Python
           - C++
-    - category: Tools
-      skills:
-          - Bash
-          - Linux
-          - Figma
-          - VSCode, Sublime Text, Atom
-          - Docker
+    # - category: Tools
+    #   skills:
+    #       - Bash
+    #       - Linux
+    #       - Figma
+    #       - VSCode, Sublime Text, Atom
+    #       - Docker
     # - category: BI & Data Analytics
     #   skills:
     #       - Microsoft Excel
@@ -224,16 +228,14 @@ languages:
     - language: English
     - language: Hindi/Urdu
     - language: Punjabi
-    - language: Spanish
+    - language: Spanish (A2)
 
 interests:
-    - Computer architecture
+    - Systems Engineering
     - CTFs
     - Sports
     - Engines
-    - Hardware
     - AI
-    - Cybersecurity
 
 references:
     # You can comment out the entries below if you don't have any references
