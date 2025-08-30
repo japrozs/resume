@@ -7,7 +7,7 @@
   headingfont: "New Computer Modern", // Set font for headings
   bodyfont: "New Computer Modern", // Set font for body
   fontsize: 10pt, // 10pt, 11pt, 12pt
-  linespacing: 4pt,
+  linespacing: 3.9pt,
   showAddress: true, // true/false Show address in contact info
   showNumber: true, // true/false Show phone number in contact info
 )
@@ -26,7 +26,7 @@
     paper: "us-letter", // a4, us-letter
     numbering: none,
     number-align: center, // left, center, right
-    margin: 0.9cm, // 1.25cm, 1.87cm, 2.5cm
+    margin: 0.7cm, // 1.25cm, 1.87cm, 2.5cm
   )
 
   // set text(font: "New Computer Modern")
@@ -83,16 +83,16 @@
 // #heading(level: 2, "Objective Statement")
 // Computer Science major seeking an internship with NASA Jet Propulsion Laboratory working on Engineering in computing and software.
 #cveducation(cvdata)
-#v(5pt)
+#v(2pt)
 #cvwork(cvdata)
-#v(5pt)
+#v(2pt)
 #cvprojects(cvdata, singlecolumn: true)
-#v(5pt)
+#v(2pt)
 #cvskills(cvdata, isbreakable: true)
-#v(5pt)
+#v(2pt)
 #cvawards(cvdata)
-#v(5pt)
-// #cvopensource(cvdata)
+#v(2pt)
+#cvopensource(cvdata)
 // #v(5pt)
 // #cvcoursework(cvdata)
 // #cvaffiliations(cvdata) \

@@ -261,7 +261,7 @@
     block[
       == Projects
       #let projects = if singlecolumn {
-        info.projects.slice(0, 5) // only first 3
+        info.projects.slice(0, 3) // only first 3
       } else {
         info.projects // all
       }
