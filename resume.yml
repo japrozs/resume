@@ -30,9 +30,9 @@ work:
       endDate: 0
       highlights:
           # - Helped produce college football and basketball game shows for ESPN & performed camera work and graphics work
-          - Setup and monitor events for conferences, student organisations, and external clients
-          - Monitors all activities, reservations, and programs during the designated hours of operation and enforces all building policies and safety regulations.
-          - Makes appropriate decisions regarding behavior and actions, recognizes, and accepts responsibility for their actions, manages time effectively, acts in a dependable manner, and fulfills job requirements completely.
+          - Set up and monitored events for conferences, student organizations, and external clients
+          - Monitored all activities, reservations, and programs during the designated hours of operation and enforced all building policies and safety regulations.
+          - Made appropriate decisions regarding behavior and actions, and accepted responsibility for team actions, managed time effectively, acted in a dependable manner, and fulfilled job requirements completely
     - organization: Georgia State Production Network
       position: Engineering Assistant
       url: https://example.com
@@ -42,7 +42,7 @@ work:
       highlights:
           - Helped produce college football and basketball game shows for ESPN & performed camera work and graphics work
           - Setup and make sure that equipment like cameras, hardware and networks work as intended
-          - Did the networking and cable management for music concerts
+          - Handled networking and cable management for music concerts
 
 education:
     - institution: Georgia State University
@@ -60,9 +60,9 @@ education:
       #     - Engineering Data Analysis
       #     - Compiler Architecture
       highlights:
-          - "*Cummulative GPA* – 3.6"
+          - "*Cumulative GPA* – 3.6"
           - "Rocketry Club – Founding member #sym.space.med  #sym.dot.c #sym.space.med ATL Sikhs – Executive #sym.space.med #sym.dot.c #sym.space.med Computer Science Club"
-          - "*Relevant Coursework* – Computer Organization , Systems Level Programming , Programming Language Concepts, Calculus of II Variables, Discrete Mathematics, Linear Algebra, Probaility & Statistics"
+          - "*Relevant Coursework* – Computer Organization , Systems Level Programming , Programming Language Concepts, Calculus of II Variables, Discrete Mathematics, Linear Algebra, Probability & Statistics"
     # - institution: Saint Columba's High School
     #   studyType: High School Degree
     #   startDate: 2010-04-01
@@ -110,14 +110,14 @@ awards:
       url: https://truist.com
       location: Atlanta, GA
       highlights:
-          - Capture the Flag event organised by Truist Bank where my team came first and won a cash reward of \$2000\+
+          - Capture the Flag event organized by Truist Bank where my team came first and won a cash reward of \$2000\+
     - title: 1st place at CodeDay Delhi
       date: 2022-11-20
       issuer: CodeDay
       url: https://codeday.org
       location: New Delhi, IN
       highlights:
-          - Took part in my first hackathon which consisted of around 200 high school students from all over India and won 1st place.
+          - Took part in my first hackathon which consisted of around 200 high school students from all over India and won 1st place
 
 certificates:
     - name: "CS50 - Introduction to Computer Science"
@@ -158,7 +158,7 @@ opensource:
     - name: "Fig Autocomplete"
       date: 2021-08-02
       languages: "Typescript"
-      desc: "IDE like autocomplete for terminals"
+      desc: "IDE-like autocomplete for terminals"
 
 publications:
     - name: A convolutional neural network for predicting Greenland glacier melt and glacial water flow
@@ -173,21 +173,21 @@ projects:
       date: 2023-06-01
       highlights:
           - A fully spec-compliant parser for the Java Class file format
-          - Went through the entire Class file format spec  and modelled the parser based on that
+          - Studied the full Class file format specification and implemented the parser accordingly
     - name: "Fast Key-Value Store"
       url: https://github.com/japrozs/vettel
       languages: "C #sym.dot.c Python"
       date: 2020-02-01
       highlights:
-          - A minimalistic key-value store written in C aimed at speed.
-          - Vettel performs better than existing key-value stores like Redis *in some cases*.
-    - name: "WYSIWIG Note Editor"
+          - A minimalistic key-value store written in C aimed at speed
+          - Vettel performs better than existing key-value stores like Redis *in some cases*
+    - name: "WYSIWYG Note Editor"
       url: https://github.com/japrozs/dino
       languages: "TypeScript #sym.dot.c NextJS"
       date: 2021-12-01
       highlights:
-          - A simple yet powerful note-editor with modern features like WYSIWIG editor, complex document nesting, and dark mode.
-          - Got features on the home page on ProductHunt with 24 hours of its launch
+          - A simple yet powerful note-editor with modern features like WYSIWYG editor, complex document nesting, and dark mode
+          - Featured on the ProductHunt home page within 24 hours of launch
     - name: "Web Server Project"
       url: https://github.com/japrozs/dom
       languages: "C"
@@ -200,7 +200,7 @@ projects:
       languages: "TypeScript #sym.dot.c NextJS"
       date: 2023-09-02
       highlights:
-          - Chronos allows you to search documents, media, PRs etc. across storage platforms like GDrive, Dropbox, Github etc.
+          - Enables search across documents, media, and pull requests stored on platforms such as Google Drive, Dropbox, and GitHub
           - All of the data is stored in the respective storage platforms maintaining user privacy and trust.
 
 skills:
@@ -216,7 +216,7 @@ skills:
     - category: Programming
       skills:
           - C
-          - Typescript
+          - TypeScript
           - Python
           - C++
           - Bash
