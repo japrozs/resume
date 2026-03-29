@@ -256,39 +256,37 @@
 }
 
 // Projects
+#let md-to-typst(s) = {
+  // Convert **text** to *text* (bold)
+  let result = s
+  let re = regex("\*\*([^*]+)\*\*")
+  result = result.replace(re, m => "*" + m.captures.at(0) + "*")
+  // Convert `code` to `code` (already same, but ensure it's kept)
+  result
+}
+
 #let cvprojects(info, isbreakable: true, singlecolumn: false) = {
   if info.projects != none {
     block[
       == Projects
       #let projects = if singlecolumn {
-        info.projects.slice(0, 3) // only first 3
+        info.projects.slice(0, 3)
       } else {
-        info.projects // all
+        info.projects
       }
       #for project in projects {
-        // Parse ISO date strings into datetime objects
-        let date = utils.strpdate(project.date)
-        let desc = [#date #sym.dash.em #eval(project.languages, mode: "markup")]
-        // let end = utils.strpdate(project.endDate)
-        // Create a block layout for each project entry
+        // let date = utils.strpdate(project.date)
+        let desc = [#eval(project.languages, mode: "markup")]
+        // let desc = [#date #sym.dash.em #eval(project.languages, mode: "markup")]
         block(width: 100%, breakable: isbreakable)[
-          // Line 1: Project Name + URL
           #if project.url != none [
             *#link(project.url)[#text(font: "New Computer Modern")[#project.name]]* #h(1fr) #desc
           ] else [
             *#project.name* #h(1fr) #desc
           ]
-
-          // Line 2: Date + Languages
-          // #if singlecolumn == false [
-          //   // #h(1fr)
-          //   #date #sym.dash.em #text()[#eval(project.languages, mode: "markup")] \
-          //   // #h(1fr)
-          // ]
-          #v(1.5pt)
-          // Highlights
+          #v(2pt)
           #for hi in project.highlights [
-            - #eval(hi, mode: "markup")
+            - #eval(md-to-typst(hi), mode: "markup")
           ]
         ]
       }
@@ -302,31 +300,40 @@
   if info.awards != none {
     block[
       == Honors & Awards
+
       #for award in info.awards {
-        // Parse ISO date strings into datetime objects
-        let date = utils.strpdate(award.date)
-        // Create a block layout for each education entry
         block(width: 100%, breakable: isbreakable)[
-          // Line 1: Institution and Location
+
+          // Line 1: Title – Issuer | Location
           #if award.url != none [
-            *#link(award.url)[#text(font: "New Computer Modern")[#award.title]]* #h(1fr) #award.location \
+            *#link(award.url)[
+              #text(font: "New Computer Modern")[
+                #award.title #sym.dash.em #text(style: "italic")[#award.issuer]
+              ]
+            ]*
+            #h(1fr)
+            #award.location \
           ] else [
-            #text(font: "New Computer Modern")[*#award.title*] #h(1fr) #award.location \
+            #text(font: "New Computer Modern")[
+              *#award.title* #sym.dash.em #text(style: "italic")[#award.issuer]
+            ]
+            #h(1fr)
+            #award.location \
           ]
-          // Line 2: Degree and Date Range
-          Issued by #text(style: "italic")[#award.issuer]  #h(1fr) #text(style: "italic")[#date] \
-          #h(1fr)
-          // Summary or Description
+
+          // Highlights
           #if award.highlights != none {
+            [#v(1.5pt)]
             for hi in award.highlights [
               - #eval(hi, mode: "markup")
             ]
-          } else {}
+          }
         ]
       }
     ]
   }
 }
+
 
 // Certifications
 #let cvcertificates(info, isbreakable: true) = {
@@ -360,21 +367,24 @@
       == Open Source Contributions
 
       #for cert in info.opensource {
-        // Parse ISO date strings into datetime objects
         let date = utils.strpdate(cert.date)
-        // Create a block layout for each education entry
+
         block(width: 100%, breakable: isbreakable)[
-          #text(font: "New Computer Modern")[*#cert.name*] #h(1fr) #date #sym.dash.em #text()[#eval(
-            cert.languages,
-            mode: "markup",
-          )] \
-          // Line 2: Degree and Date Range
-          #cert.desc \
+          #text(font: "New Computer Modern")[
+            *#cert.name* #sym.dash.em #cert.desc
+          ]
+          #h(1fr)
+          #text()[
+            #eval(cert.languages, mode: "markup")
+            // #sym.dash.em
+            // #date
+          ]
         ]
       }
     ]
   }
 }
+
 
 #let cvcoursework(info, isbreakable: true) = {
   if info.certificates != none {

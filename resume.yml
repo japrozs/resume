@@ -62,7 +62,7 @@ education:
       highlights:
           - "*Cumulative GPA* – 3.6"
           - "Rocketry Club – Founding member #sym.space.med  #sym.dot.c #sym.space.med ATL Sikhs – Executive #sym.space.med #sym.dot.c #sym.space.med Computer Science Club"
-          - "*Relevant Coursework* – Computer Organization , Systems Level Programming , Programming Language Concepts, Calculus of II Variables, Discrete Mathematics, Linear Algebra, Probability & Statistics"
+          - "*Relevant Coursework* – Deep Learning, Computer Organization , Systems Level Programming , Programming Language Concepts, Calculus of II Variables, Discrete Mathematics, Linear Algebra, Probability & Statistics"
     # - institution: Saint Columba's High School
     #   studyType: High School Degree
     #   startDate: 2010-04-01
@@ -104,6 +104,13 @@ affiliations:
           - Tell me, pray, what explanation do you put upon their actions?
 
 awards:
+    - title: 1st place at AI ATL 2025
+      date: 2025-01-01
+      issuer: Georgia Institute of Technology
+      url: https://aiatl.io
+      location: Atlanta, GA
+      highlights:
+          - Built a voice-enabled AI platform in 36 hours, winning 1st Place in the Drive Capital Track and earning an opportunity to pitch for up to \$500K investment
     - title: 1st place at Truist CTF
       date: 2024-11-01
       issuer: Truist Bank & Georgia State University
@@ -148,7 +155,7 @@ coursework:
 
 opensource:
     - name: "Fprime"
-      date: 2024-01-08
+      date: 2025-09-01
       languages: "C++"
       desc: "JPL's flight software embedded framework"
     - name: "JSD"
@@ -167,41 +174,111 @@ publications:
       url: https://example.com
 
 projects:
+    - name: "Gecko"
+      url: https://github.com/japrozs/gecko
+      languages: "Python #sym.dot.c C++"
+      date: 2026-02-16
+      highlights:
+          - Implemented a **custom autograd engine from scratch in both Python and C++**, exploring the internals of automatic differentiation that powers every modern deep learning framework
+          - Built a **10M parameter GPT Transformer** with self-attention blocks directly from the original paper
+          - Trained **character-level language models** across multiple architectures – bigram baselines, MLP, and a full Transformer – developing a ground-up understanding of how modern LLMs work
+
+    - name: "Travel Agency Website"
+      url: https://github.com/japrozs/nt
+      languages: "TypeScript #sym.dot.c NextJS #sym.dot.c TailwindCSS"
+      date: 2025-10-10
+      highlights:
+          - Built and shipped a **production-grade, full-stack travel agency website** live on Vercel, solving the client's need for a modern online presence by engineering a **Next.js + TailwindCSS** platform from scratch
+          - Architected a **clean component-based frontend** with `shadcn/ui` and full **TypeScript type safety**, boosted discoverability with **pagination, dynamic routing, and OG metadata** for SEO and social sharing
+
     - name: "Java Class Parser"
       url: https://github.com/japrozs/rum
       languages: "C #sym.dot.c Bash #sym.dot.c Java"
       date: 2023-06-01
       highlights:
-          - A fully spec-compliant parser for the Java Class file format
-          - Studied the full Class file format specification and implemented the parser accordingly
+          - Built a **fully spec-compliant Java Class file parser in pure C** by reading and implementing Oracle's official JVM Class file format specification cover to cover – no libraries, no shortcuts
+          - Correctly decoded every section of the binary format – **constant pool, access flags, methods, fields, and attributes** – validated against real-world compiled Java programs
+          - Wrote a **comprehensive bash test suite** against real compiled Java sample files to catch regressions and edge cases automatically
+
     - name: "Fast Key-Value Store"
       url: https://github.com/japrozs/vettel
       languages: "C #sym.dot.c Python"
       date: 2020-02-01
       highlights:
-          - A minimalistic key-value store written in C aimed at speed
-          - Vettel performs better than existing key-value stores like Redis *in some cases*
+          - Built a **fully functional key-value store in under 300 lines of C**, solving the need for a fast, minimal store by stripping away every abstraction Redis carries – zero external dependencies
+          - "**Outperformed Redis by 19%** on 1000-key insertion benchmarks (`10.72s` vs Redis's `13.26s`), validated with rigorous Python benchmark scripts under identical test conditions"
+          - Designed for **speed and minimal footprint**, making it ideal for lightweight embedded use cases and local testing environments where Redis is overkill
+
     - name: "WYSIWYG Note Editor"
       url: https://github.com/japrozs/dino
       languages: "TypeScript #sym.dot.c NextJS"
       date: 2021-12-01
       highlights:
-          - A simple yet powerful note-editor with modern features like WYSIWYG editor, complex document nesting, and dark mode
-          - Featured on the ProductHunt home page within 24 hours of launch
+          - Built a **full-stack WYSIWYG note-taking app** solving the fragmentation between notes and files by combining a rich text editor, **nested document hierarchies**, and **5GB cloud file storage** in one interface
+          - Architected as a **Lerna monorepo** with separate `web` and `server` packages – independently deployable but sharing a unified **TypeScript-first** codebase
+          - Drove organic traction by shipping a polished dark mode and quick-find experience – earning a **ProductHunt homepage feature within 24 hours** of launch and **12 GitHub stars** with zero marketing spend
+
     - name: "Web Server Project"
       url: https://github.com/japrozs/dom
       languages: "C"
       date: 2022-06-02
       highlights:
-          - A unique way to create tiny web servers for testing purposes using a custom syntax config file
-          - Routes are specified alongwith bash commands that run when those routes are accessed and the data is sent back to the client
+          - Built a **novel mini web server in pure C** with a custom **`.dm` config DSL**, letting developers spin up fully functional local servers with zero boilerplate or framework overhead
+          - Designed a clean **`"<route>" -> "command"` syntax** where hitting a route executes a shell command and streams its output back as the HTTP response
+          - Implemented a **full HTTP request/response pipeline from scratch** in C with zero dependencies, handling parsing, routing, and response delivery end to end
+
     - name: "Spotlight Search for Files"
       url: https://github.com/japrozs/chronos
       languages: "TypeScript #sym.dot.c NextJS"
       date: 2023-09-02
       highlights:
-          - Enables search across documents, media, and pull requests stored on platforms such as Google Drive, Dropbox, and GitHub
-          - All of the data is stored in the respective storage platforms maintaining user privacy and trust.
+          - Built a **macOS Spotlight-inspired universal search tool** solving the pain of context-switching between apps by federating search across **Google Drive, Dropbox, and GitHub** into a single interface
+          - Solved user privacy concerns by designing a **zero-storage architecture** – all data stays in the user's own connected platforms, Chronos never mirrors or retains files
+          - Architected as a **full monorepo** with separate `web`, `server`, and `desktop` packages, supporting both a browser app and a **native desktop client** from a shared codebase
+# projects:
+#     - name: "Travel Agency Website"
+#       url: https://github.com/japrozs/nt
+#       languages: "TypeScript #sym.dot.c NextJS #sym.dot.c TailwindCSS"
+#       date: 2025-10-10
+#       highlights:
+#           - Designed and developed a production-grade website for a travel agency business
+#           - Built a responsive, SEO-optimized platform with modern UI components and streamlined customer inquiry workflows
+
+#     - name: "Java Class Parser"
+#       url: https://github.com/japrozs/rum
+#       languages: "C #sym.dot.c Bash #sym.dot.c Java"
+#       date: 2023-06-01
+#       highlights:
+#           - A fully spec-compliant parser for the Java Class file format
+#           - Studied the full Class file format specification and implemented the parser accordingly
+#     - name: "Fast Key-Value Store"
+#       url: https://github.com/japrozs/vettel
+#       languages: "C #sym.dot.c Python"
+#       date: 2020-02-01
+#       highlights:
+#           - A minimalistic key-value store written in C aimed at speed
+#           - Vettel performs better than existing key-value stores like Redis *in some cases*
+#     - name: "WYSIWYG Note Editor"
+#       url: https://github.com/japrozs/dino
+#       languages: "TypeScript #sym.dot.c NextJS"
+#       date: 2021-12-01
+#       highlights:
+#           - A simple yet powerful note-editor with modern features like WYSIWYG editor, complex document nesting, and dark mode
+#           - Featured on the ProductHunt home page within 24 hours of launch
+#     - name: "Web Server Project"
+#       url: https://github.com/japrozs/dom
+#       languages: "C"
+#       date: 2022-06-02
+#       highlights:
+#           - A unique way to create tiny web servers for testing purposes using a custom syntax config file
+#           - Routes are specified alongwith bash commands that run when those routes are accessed and the data is sent back to the client
+#     - name: "Spotlight Search for Files"
+#       url: https://github.com/japrozs/chronos
+#       languages: "TypeScript #sym.dot.c NextJS"
+#       date: 2023-09-02
+#       highlights:
+#           - Enables search across documents, media, and pull requests stored on platforms such as Google Drive, Dropbox, and GitHub
+#           - All of the data is stored in the respective storage platforms maintaining user privacy and trust.
 
 skills:
     # - category: Soft Skills

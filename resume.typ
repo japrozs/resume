@@ -79,12 +79,34 @@
 //   ],
 // )
 
-// Single column layout
+// // Single column layout
+// // #heading(level: 2, "Objective Statement")
+// // Computer Science major seeking an internship with NASA Jet Propulsion Laboratory working on Engineering in computing and software.
+// #cveducation(cvdata)
+// #v(2pt)
+// #cvwork(cvdata)
+// #v(2pt)
+// #cvprojects(cvdata, singlecolumn: true)
+// #v(2pt)
+// #cvskills(cvdata, isbreakable: true)
+// #v(2pt)
+// #cvawards(cvdata)
+// #v(2pt)
+// // #cvopensource(cvdata)
+// // #v(5pt)
+// // #cvcoursework(cvdata)
+// // #cvaffiliations(cvdata) \
+// // #cvcertificates(cvdata) \
+
+// // #cvpublications(cvdata) \
+// // #cvreferences(cvdata)
+
+
+// ===========
+// TESTING A NEW LAYOUT
 // #heading(level: 2, "Objective Statement")
 // Computer Science major seeking an internship with NASA Jet Propulsion Laboratory working on Engineering in computing and software.
 #cveducation(cvdata)
-#v(2pt)
-#cvwork(cvdata)
 #v(2pt)
 #cvprojects(cvdata, singlecolumn: true)
 #v(2pt)
@@ -92,7 +114,8 @@
 #v(2pt)
 #cvawards(cvdata)
 #v(2pt)
-#cvopensource(cvdata)
+#cvwork(cvdata)
+// #cvopensource(cvdata)
 // #v(5pt)
 // #cvcoursework(cvdata)
 // #cvaffiliations(cvdata) \
