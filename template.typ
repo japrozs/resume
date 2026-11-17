@@ -120,6 +120,9 @@
     if info.personal.url != none {
       box(link(info.personal.url)[#info.personal.url.split("//").at(1)])
     },
+    // if info.personal.status != none {
+    //   info.personal.status
+    // }
   ).filter(it => it != none) // Filter out none elements from the profile array
 
   // Add any social profiles

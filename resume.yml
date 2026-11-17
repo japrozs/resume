@@ -3,8 +3,10 @@
 personal:
     name: Japroz Singh Saini
     email: japrozsaini@outlook.com
+    msg: hi
     phone: (404) 203-3782
     url: https://www.japroz.me
+    status: Visa Status – Permanent Resident
     location:
         city: New York
         region: New York
@@ -27,7 +29,7 @@ work:
       url: https://example.com
       location: Atlanta, GA
       startDate: 2024-01-10
-      endDate: 0
+      endDate: 2026-05-10
       highlights:
           # - Helped produce college football and basketball game shows for ESPN & performed camera work and graphics work
           - Set up and monitored events for conferences, student organizations, and external clients
